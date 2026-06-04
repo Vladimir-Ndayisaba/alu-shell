@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c 'import sys; sys.stdout.write("".join(line for i,line in enumerate(sys.stdin,1) if i%2==1))'
+paste - - <&0 | cut -f1
